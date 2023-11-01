@@ -15,12 +15,15 @@ class Tunewidget extends StatelessWidget {
       },
       child: Container(
         color: tune.color,
-        child: const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-             Icon(Icons.music_note_sharp),
-              Icon(Icons.music_note_sharp),
-          ],
+        child: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+                Icon(Icons.music_note_sharp),
+                Icon(Icons.music_note_sharp),
+            ],
+          ),
         ),
       ),
     ));
